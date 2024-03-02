@@ -16,6 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    // TODO: Fix this error ClerkInstanceContext not found
     <ClerkProvider>
       <html lang="en">
         <body className={`${inter.className} bg-dark-1`}>{children}</body>
