@@ -16,8 +16,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} bg-dark-1`}>{children}</body>
-    </html>
+    <ClerkProvider>
+      {/* TODO: Route to onbaording page and fix that error */}
+      <html lang="en">
+        <body className={`${inter.className} bg-dark-1`}>{children}</body>
+      </html>
+    </ClerkProvider>
   );
 }
