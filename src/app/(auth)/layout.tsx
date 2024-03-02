@@ -17,7 +17,6 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      {/* TODO: Route to onbaording page and fix that error */}
       <html lang="en">
         <body className={`${inter.className} bg-dark-1`}>{children}</body>
       </html>
